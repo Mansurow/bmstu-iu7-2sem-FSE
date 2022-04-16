@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HomeWork: Исходный файл main.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">HomeWork
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _MAIN_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define MAX_NUMBERS 100</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define ERR_INVALID_PARAM -1</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define FULL_MAX          -2</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define NOT_FOUND_FILE    -3</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define FILE_IS_EMPTY     -4</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define IN_FILE_SYMBOLS   -5</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define IN_FILE_DOUBLE    -6</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8h.html#ad65c82ebad24375e20e15507e4e9aae8">read_array</a>(FILE *my_file,<span class="keywordtype">int</span> a[<a class="code" href="main_8c.html#a54c7905f7601088563945f0eef2d41a2">MAX_NUMBERS</a>], <span class="keywordtype">int</span> *n);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8h.html#a99247687c437e6c928ba716c4a0507cc">sum_of_figure</a>(<span class="keywordtype">int</span> number);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8h.html#a3d42f2aff07acd8c8f94e721c03b964d">check_sum</a>(<span class="keywordtype">int</span> number);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8h.html#a600eec944d83a9140113802650e3fce2">converting_to_binarycod</a>(<span class="keywordtype">int</span> number, <span class="keywordtype">int</span> b[<a class="code" href="main_8c.html#a54c7905f7601088563945f0eef2d41a2">MAX_NUMBERS</a>], <span class="keywordtype">int</span> *nb);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8h.html#a2af2d0b1e9c3f8cf72d4e4f115eca119">reverse_number</a> (<span class="keywordtype">int</span> number, <span class="keywordtype">int</span> *reverse);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8h.html#aa7c0c982b00275c22ef81e8efbf3051a">print_error</a>(<span class="keywordtype">int</span> rc);</div>
+<div class="ttc" id="amain_8c_html_a54c7905f7601088563945f0eef2d41a2"><div class="ttname"><a href="main_8c.html#a54c7905f7601088563945f0eef2d41a2">MAX_NUMBERS</a></div><div class="ttdeci">#define MAX_NUMBERS</div><div class="ttdoc">Максимальное значение для количетва чисел в файле</div><div class="ttdef"><b>Definition:</b> main.c:21</div></div>
+<div class="ttc" id="amain_8h_html_a2af2d0b1e9c3f8cf72d4e4f115eca119"><div class="ttname"><a href="main_8h.html#a2af2d0b1e9c3f8cf72d4e4f115eca119">reverse_number</a></div><div class="ttdeci">int reverse_number(int number, int *reverse)</div><div class="ttdoc">Функция преобразует число в обратный порядок следования</div><div class="ttdef"><b>Definition:</b> main.c:312</div></div>
+<div class="ttc" id="amain_8h_html_a3d42f2aff07acd8c8f94e721c03b964d"><div class="ttname"><a href="main_8h.html#a3d42f2aff07acd8c8f94e721c03b964d">check_sum</a></div><div class="ttdeci">int check_sum(int number)</div><div class="ttdoc">Функция проверяет четность числа</div><div class="ttdef"><b>Definition:</b> main.c:265</div></div>
+<div class="ttc" id="amain_8h_html_a600eec944d83a9140113802650e3fce2"><div class="ttname"><a href="main_8h.html#a600eec944d83a9140113802650e3fce2">converting_to_binarycod</a></div><div class="ttdeci">int converting_to_binarycod(int number, int b[MAX_NUMBERS], int *nb)</div><div class="ttdoc">Функция преобразует число в двоичный код</div><div class="ttdef"><b>Definition:</b> main.c:276</div></div>
+<div class="ttc" id="amain_8h_html_a99247687c437e6c928ba716c4a0507cc"><div class="ttname"><a href="main_8h.html#a99247687c437e6c928ba716c4a0507cc">sum_of_figure</a></div><div class="ttdeci">int sum_of_figure(int number)</div><div class="ttdoc">Функция считает сумму цифр числа</div><div class="ttdef"><b>Definition:</b> main.c:251</div></div>
+<div class="ttc" id="amain_8h_html_aa7c0c982b00275c22ef81e8efbf3051a"><div class="ttname"><a href="main_8h.html#aa7c0c982b00275c22ef81e8efbf3051a">print_error</a></div><div class="ttdeci">void print_error(int rc)</div><div class="ttdoc">Функция вывода сообщения взависимости от кода ошибки</div><div class="ttdef"><b>Definition:</b> main.c:188</div></div>
+<div class="ttc" id="amain_8h_html_ad65c82ebad24375e20e15507e4e9aae8"><div class="ttname"><a href="main_8h.html#ad65c82ebad24375e20e15507e4e9aae8">read_array</a></div><div class="ttdeci">int read_array(FILE *my_file, int a[MAX_NUMBERS], int *n)</div><div class="ttdoc">Функция читает из файл числа и записывает в массив</div><div class="ttdef"><b>Definition:</b> main.c:204</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Input number of elemets:
+Enter elements:
+Array:
+

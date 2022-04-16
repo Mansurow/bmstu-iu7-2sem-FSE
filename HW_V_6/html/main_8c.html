@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HomeWork: Файл main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">HomeWork
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл main.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Документация к домашней работе по ОПИ -DOXYGEN-.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;unit_tests.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a54c7905f7601088563945f0eef2d41a2"><td class="memItemLeft" align="right" valign="top"><a id="a54c7905f7601088563945f0eef2d41a2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a54c7905f7601088563945f0eef2d41a2">MAX_NUMBERS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a54c7905f7601088563945f0eef2d41a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальное значение для количетва чисел в файле <br /></td></tr>
+<tr class="separator:a54c7905f7601088563945f0eef2d41a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f64751d8ed8ea15a1011b2d1e49ac4"><td class="memItemLeft" align="right" valign="top"><a id="a63f64751d8ed8ea15a1011b2d1e49ac4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a63f64751d8ed8ea15a1011b2d1e49ac4">SIZE_OF_NAME_FILE</a>&#160;&#160;&#160;50</td></tr>
+<tr class="memdesc:a63f64751d8ed8ea15a1011b2d1e49ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальное значение для строки в которой лежит путь и название файла <br /></td></tr>
+<tr class="separator:a63f64751d8ed8ea15a1011b2d1e49ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad633b9edd00d2bf59ace1af24cc483f4"><td class="memItemLeft" align="right" valign="top"><a id="ad633b9edd00d2bf59ace1af24cc483f4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ad633b9edd00d2bf59ace1af24cc483f4">ERR_INVALID_PARAM</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:ad633b9edd00d2bf59ace1af24cc483f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка передачи в функцию неверных параметров <br /></td></tr>
+<tr class="separator:ad633b9edd00d2bf59ace1af24cc483f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44d863ef45dc511d86286ce4417b82c"><td class="memItemLeft" align="right" valign="top"><a id="af44d863ef45dc511d86286ce4417b82c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#af44d863ef45dc511d86286ce4417b82c">FULL_MAX</a>&#160;&#160;&#160;-2</td></tr>
+<tr class="memdesc:af44d863ef45dc511d86286ce4417b82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка переполнения файла числами <br /></td></tr>
+<tr class="separator:af44d863ef45dc511d86286ce4417b82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8148106cb9a1e8f6dc2966a9f85150"><td class="memItemLeft" align="right" valign="top"><a id="aec8148106cb9a1e8f6dc2966a9f85150"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aec8148106cb9a1e8f6dc2966a9f85150">NOT_FOUND_FILE</a>&#160;&#160;&#160;-3</td></tr>
+<tr class="memdesc:aec8148106cb9a1e8f6dc2966a9f85150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка несуществующий файл <br /></td></tr>
+<tr class="separator:aec8148106cb9a1e8f6dc2966a9f85150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b75b25cb613644b6e60b34bcabbf3a9"><td class="memItemLeft" align="right" valign="top"><a id="a4b75b25cb613644b6e60b34bcabbf3a9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a4b75b25cb613644b6e60b34bcabbf3a9">FILE_IS_EMPTY</a>&#160;&#160;&#160;-4</td></tr>
+<tr class="memdesc:a4b75b25cb613644b6e60b34bcabbf3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка передан пустой файл <br /></td></tr>
+<tr class="separator:a4b75b25cb613644b6e60b34bcabbf3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af96cf8b4e754f7cdc567c5987304ff"><td class="memItemLeft" align="right" valign="top"><a id="a0af96cf8b4e754f7cdc567c5987304ff"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a0af96cf8b4e754f7cdc567c5987304ff">IN_FILE_SYMBOLS</a>&#160;&#160;&#160;-5</td></tr>
+<tr class="memdesc:a0af96cf8b4e754f7cdc567c5987304ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка передан некоррестный файл с символами и буквами <br /></td></tr>
+<tr class="separator:a0af96cf8b4e754f7cdc567c5987304ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499aa6b509085d47eb26969958710d21"><td class="memItemLeft" align="right" valign="top"><a id="a499aa6b509085d47eb26969958710d21"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a499aa6b509085d47eb26969958710d21">IN_FILE_DOUBLE</a>&#160;&#160;&#160;-6</td></tr>
+<tr class="memdesc:a499aa6b509085d47eb26969958710d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка передан некоректный файл с вещественными числами <br /></td></tr>
+<tr class="separator:a499aa6b509085d47eb26969958710d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a35bbb11d3960b2d43376fbffa6fcbbe3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a35bbb11d3960b2d43376fbffa6fcbbe3">read_array</a> (FILE *f, int a[<a class="el" href="main_8c.html#a54c7905f7601088563945f0eef2d41a2">MAX_NUMBERS</a>], int *n)</td></tr>
+<tr class="memdesc:a35bbb11d3960b2d43376fbffa6fcbbe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция читает из файл числа и записывает в массив  <a href="main_8c.html#a35bbb11d3960b2d43376fbffa6fcbbe3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a35bbb11d3960b2d43376fbffa6fcbbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99247687c437e6c928ba716c4a0507cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a99247687c437e6c928ba716c4a0507cc">sum_of_figure</a> (int number)</td></tr>
+<tr class="memdesc:a99247687c437e6c928ba716c4a0507cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция считает сумму цифр числа  <a href="main_8c.html#a99247687c437e6c928ba716c4a0507cc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a99247687c437e6c928ba716c4a0507cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d42f2aff07acd8c8f94e721c03b964d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3d42f2aff07acd8c8f94e721c03b964d">check_sum</a> (int number)</td></tr>
+<tr class="memdesc:a3d42f2aff07acd8c8f94e721c03b964d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверяет четность числа  <a href="main_8c.html#a3d42f2aff07acd8c8f94e721c03b964d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3d42f2aff07acd8c8f94e721c03b964d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600eec944d83a9140113802650e3fce2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a600eec944d83a9140113802650e3fce2">converting_to_binarycod</a> (int number, int b[<a class="el" href="main_8c.html#a54c7905f7601088563945f0eef2d41a2">MAX_NUMBERS</a>], int *nb)</td></tr>
+<tr class="memdesc:a600eec944d83a9140113802650e3fce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция преобразует число в двоичный код  <a href="main_8c.html#a600eec944d83a9140113802650e3fce2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a600eec944d83a9140113802650e3fce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c87fd9ba1e975f9319760c3f03bf5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ad7c87fd9ba1e975f9319760c3f03bf5a">reverse_number</a> (int number, int *reverse)</td></tr>
+<tr class="memdesc:ad7c87fd9ba1e975f9319760c3f03bf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция преобразует число в обратный порядок следования  <a href="main_8c.html#ad7c87fd9ba1e975f9319760c3f03bf5a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad7c87fd9ba1e975f9319760c3f03bf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c0c982b00275c22ef81e8efbf3051a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aa7c0c982b00275c22ef81e8efbf3051a">print_error</a> (int rc)</td></tr>
+<tr class="memdesc:aa7c0c982b00275c22ef81e8efbf3051a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вывода сообщения взависимости от кода ошибки  <a href="main_8c.html#aa7c0c982b00275c22ef81e8efbf3051a">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa7c0c982b00275c22ef81e8efbf3051a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная функция кода  <a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">Подробнее...</a><br /></td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Документация к домашней работе по ОПИ -DOXYGEN-. </p>
+<p>На вход в программу поступует имя файла.Файл содержит только целые числа и в файле не содержатся больше 100 чисел. Находит сумму цифр каждого числа и если она четная то число перводит в двоичный код, при этом первый бит отвечает за знак числа; если же нечетная сумма цифр числа то число преобразуется в обратном порядке следования. Результат программы выводится в консоль.Каждое число через пробел. </p><dl class="section author"><dt>Авторы</dt><dd>Мансуров Владислав ИУ7-26Б </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a3d42f2aff07acd8c8f94e721c03b964d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d42f2aff07acd8c8f94e721c03b964d">&#9670;&nbsp;</a></span>check_sum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_sum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция проверяет четность числа </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>число, которое нужно проверить на четность </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>response - признак True или False </dd></dl>
+
+</div>
+</div>
+<a id="a600eec944d83a9140113802650e3fce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600eec944d83a9140113802650e3fce2">&#9670;&nbsp;</a></span>converting_to_binarycod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int converting_to_binarycod </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>[MAX_NUMBERS], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция преобразует число в двоичный код </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>число, которое нужно преобразовать в двоичный кода </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">b</td><td>указатель на массив </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nb</td><td>указатель на размерность </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код ошибки 0 или -1 </dd></dl>
+
+</div>
+</div>
+<a id="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная функция кода </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код ошибки если все прошло успешно то 0, если нет то числа неравные 0 </dd></dl>
+
+</div>
+</div>
+<a id="aa7c0c982b00275c22ef81e8efbf3051a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c0c982b00275c22ef81e8efbf3051a">&#9670;&nbsp;</a></span>print_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_error </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вывода сообщения взависимости от кода ошибки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rc</td><td>код ошибки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a35bbb11d3960b2d43376fbffa6fcbbe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35bbb11d3960b2d43376fbffa6fcbbe3">&#9670;&nbsp;</a></span>read_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read_array </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>my_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>[MAX_NUMBERS], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция читает из файл числа и записывает в массив </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">f</td><td>указатель на файл, то есть пути к нему </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">a</td><td>указатель на массив куда записываются числа </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">n</td><td>указатель на размерность массива </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код ошибки если все прошло успешно то 0, если нет то числа неравные 0 </dd></dl>
+
+</div>
+</div>
+<a id="ad7c87fd9ba1e975f9319760c3f03bf5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c87fd9ba1e975f9319760c3f03bf5a">&#9670;&nbsp;</a></span>reverse_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reverse_number </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>reverse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция преобразует число в обратный порядок следования </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>число, которое нужно поставить в обратном порядке следования </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">reverse</td><td>указатель на результат функции </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код ошибки 0 или -1 </dd></dl>
+
+</div>
+</div>
+<a id="a99247687c437e6c928ba716c4a0507cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99247687c437e6c928ba716c4a0507cc">&#9670;&nbsp;</a></span>sum_of_figure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sum_of_figure </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция считает сумму цифр числа </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>число, цифры которые нужно сложить </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>sum - сумму цифр числа </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HW_01_05: Исходный файл my_func.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">HW_01_05
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('my__func_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">my_func.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="my__func_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _MY_FUNC_H_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _MY_FUNC_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="my__func_8h.html#a6222d4cb667ad28d3485bc618981150c">   13</a></span>&#160;<span class="preprocessor">#define FILE_OPEN_ERR 1</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="my__func_8h.html#adce1476887ed83c1ba67ea376b2215b2">   18</a></span>&#160;<span class="preprocessor">#define ARR_OVERFLOW 2</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="my__func_8h.html#a1d8df6fec341be5008a9291378327a59">   23</a></span>&#160;<span class="preprocessor">#define INVALID_INPUT 3</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="my__func_8h.html#a139de190b03f89a34200da01ce1dafc9">   28</a></span>&#160;<span class="preprocessor">#define EMPTY_FILE 4</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="my__func_8h.html#a93cbbf61db4c2b523c524aa42d7d71b8">   34</a></span>&#160;<span class="preprocessor">#define ARR_LEN_MAX 100</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="my__func_8h.html#a63f64751d8ed8ea15a1011b2d1e49ac4">   39</a></span>&#160;<span class="preprocessor">#define SIZE_OF_NAME_FILE 50</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span> <a class="code" href="my__func_8h.html#a8b4eb9ca4e56a58300556ca83044802a">read_arr_from_file</a>(FILE *f, <span class="keywordtype">int</span> *arr, <span class="keywordtype">size_t</span> *size);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span> <a class="code" href="my__func_8h.html#ade3f3373cebec2a28e84438bd39c9f29">write_arr_to_file</a>(FILE *f, <span class="keywordtype">int</span> *arr, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="my__func_8h.html#af4dc69b414365609f01071ac2f5a8aa3">odd_to_right</a>(<span class="keywordtype">int</span> *arr, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="my__func_8h.html#a9953c8c24cdec288f4a16f98aa01fc41">bubble_sort</a>(<span class="keywordtype">int</span> *arr, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="amy__func_8h_html_a8b4eb9ca4e56a58300556ca83044802a"><div class="ttname"><a href="my__func_8h.html#a8b4eb9ca4e56a58300556ca83044802a">read_arr_from_file</a></div><div class="ttdeci">int read_arr_from_file(FILE *f, int *arr, size_t *size)</div><div class="ttdoc">Функция считывания данных(целых чисел) из файла в массив</div><div class="ttdef"><b>Definition:</b> my_func.c:15</div></div>
+<div class="ttc" id="amy__func_8h_html_a9953c8c24cdec288f4a16f98aa01fc41"><div class="ttname"><a href="my__func_8h.html#a9953c8c24cdec288f4a16f98aa01fc41">bubble_sort</a></div><div class="ttdeci">void bubble_sort(int *arr, size_t size)</div><div class="ttdoc">Функция сортировка методом пузырька</div><div class="ttdef"><b>Definition:</b> my_func.c:82</div></div>
+<div class="ttc" id="amy__func_8h_html_ade3f3373cebec2a28e84438bd39c9f29"><div class="ttname"><a href="my__func_8h.html#ade3f3373cebec2a28e84438bd39c9f29">write_arr_to_file</a></div><div class="ttdeci">int write_arr_to_file(FILE *f, int *arr, size_t size)</div><div class="ttdoc">Функция записи данных(целых чисел) в файл</div><div class="ttdef"><b>Definition:</b> my_func.c:47</div></div>
+<div class="ttc" id="amy__func_8h_html_af4dc69b414365609f01071ac2f5a8aa3"><div class="ttname"><a href="my__func_8h.html#af4dc69b414365609f01071ac2f5a8aa3">odd_to_right</a></div><div class="ttdeci">void odd_to_right(int *arr, size_t size)</div><div class="ttdoc">Функция сдвигает нечетные числа отсортированного массива в конец массива(считывание начиная с конца)</div><div class="ttdef"><b>Definition:</b> my_func.c:60</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="my__func_8h.html">my_func.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
